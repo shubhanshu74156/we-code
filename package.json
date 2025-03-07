@@ -1,0 +1,45 @@
+{
+  "name": "we-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "pack": "electron-builder --dir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhanshu74156/we-code.git"
+  },
+  "author": "shubhanshu tiwari",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1"
+  },
+  "bugs": {
+    "url": "https://github.com/shubhanshu74156/we-code/issues"
+  },
+  "homepage": "https://github.com/shubhanshu74156/we-code#readme",
+  "dependencies": {
+    "codemirror": "^5.65.16",
+    "electron": "^35.0.0"
+  },
+  "build": {
+    "appId": "com.example.code-editor",
+    "productName": "Code Editor",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

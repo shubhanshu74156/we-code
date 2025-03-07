@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- CodeMirror CSS -->
+  <link rel="stylesheet" href="./node_modules/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/monokai.css">
+</head>
+<body>
+  <div id="app">
+    <div id="sidebar">
+      <div id="file-explorer">
+        <div class="panel-header">Explorer</div>
+        <div id="file-tree"></div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div id="editor-container">
+        <div id="tabs-container">
+          <div id="tabs"></div>
+        </div>
+        <div id="editor"></div>
+      </div>
+      <div id="status-bar">
+        <div id="file-info">No file open</div>
+        <div id="cursor-position">Ln: 1, Col: 1</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="./node_modules/codemirror/lib/codemirror.js"></script>
+  <script src="./node_modules/codemirror/mode/javascript/javascript.js"></script>
+  <script src="./node_modules/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="./node_modules/codemirror/mode/css/css.js"></script>
+  <script src="./node_modules/codemirror/mode/xml/xml.js"></script>
+  <script src="./node_modules/codemirror/addon/edit/closebrackets.js"></script>
+  <script src="./node_modules/codemirror/addon/edit/matchbrackets.js"></script>
+  <script src="./node_modules/codemirror/addon/selection/active-line.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>
